@@ -36,31 +36,4 @@ public class UniqueWordsSet {
     public void setUniqueWordsSet(Set<String> uniqueWordsSet) {
         this.uniqueWordsSet = uniqueWordsSet;
     }
-
-    public static void main(String[] args) {
-        UniqueWordsSet set = new UniqueWordsSet();
-
-        try {
-            set.removeWord("Horse");
-        } catch (RuntimeException e) {
-            System.out.println(e.getMessage());
-        }
-
-        set.addWord("Horse");
-        set.addWord("House");
-        set.addWord("Home");
-        set.addWord("Honey");
-        set.addWord("Hell");
-        set.addWord("Hint");
-        set.addWord("Honk");
-        set.addWord("Huge");
-
-        try {
-            set.removeWord("Horse");
-            set.verifyWordsPresence("Huge");
-            set.showUniqueWords();
-        } catch (RuntimeException e) {
-            System.out.println(e.getMessage());
-        }
-    }
 }
