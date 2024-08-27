@@ -33,21 +33,6 @@ public class PeopleSorting {
   public List<Person> getPeopleList(){
     return this.peopleList;
   }
-
-  public static void main(String[] args) {
-    PeopleSorting peopleSorting = new PeopleSorting();
-
-    peopleSorting.addPerson("Alice", 20, 1.56);
-    peopleSorting.addPerson("Bob", 30, 1.80);
-    peopleSorting.addPerson("Charlie", 25, 1.70);
-    peopleSorting.addPerson("David", 17, 1.56);
-
-    System.out.println(peopleSorting.getPeopleList());
-
-    System.out.println(peopleSorting.sortByAge());
-
-    System.out.println(peopleSorting.sortByHeight());
-  }
 }
 
 class HeightComparator implements Comparator<Person>{

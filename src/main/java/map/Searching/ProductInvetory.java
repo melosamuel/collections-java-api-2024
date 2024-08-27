@@ -76,24 +76,4 @@ public class ProductInvetory {
     public void setProductsInvetory(Map<Long, Product> productsInvetory) {
         this.productsInvetory = productsInvetory;
     }
-
-    public static void main(String[] args) {
-        ProductInvetory invetory = new ProductInvetory();
-        invetory.showInvetory();
-
-        invetory.addProduct(1L, "Product A", 10, 5.0);
-        invetory.addProduct(5L, "Product Z", 30, 1.0);
-        invetory.addProduct(2L, "Product B", 5, 10.0);
-        invetory.addProduct(6L, "Product X", 1, 500.0);
-        invetory.addProduct(3L, "Product C", 2, 15.0);
-        invetory.addProduct(7L, "Product T",29, 80.0);
-        invetory.addProduct(4L, "Product D", 7, 100.0);
-
-        invetory.showInvetory();
-
-        System.out.println("Total value of the invetory: R$" + invetory.calculateTotalInvetoryValue());
-        System.out.println("Most expensive product: " + invetory.getMostExpensiveProduct());
-        System.out.println("Cheapest product: " + invetory.getCheapestProduct());
-        System.out.println("Product with the largest quantity: " + invetory.getProductWithLargestQuantity());
-    }
 }
